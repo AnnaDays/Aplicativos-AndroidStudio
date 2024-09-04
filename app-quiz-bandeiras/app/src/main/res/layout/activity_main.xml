@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="460dp"
+        android:layout_height="729dp"
+        android:background="#0D81F2"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:background="#09427A"
+                app:srcCompat="@drawable/bandeira_png" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="#09427A" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="395dp"
+            android:layout_height="342dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/quiz_de_bandeiras" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <EditText
+            android:id="@+id/edtNomeUsuario"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#0D2F73"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_semibold"
+            android:hint="Digite seu nome:"
+            android:inputType="text"
+            android:textColor="#09346A"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#09346A"
+            android:textSize="14sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#09427A"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:onClick="telaDois"
+            android:text="Iniciar Quiz"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="12dp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="119dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="201dp"
+                android:layout_height="100dp"
+                android:background="#09427A"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="80dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/img_analu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="#09427A"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:background="#09427A"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Feito por:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Ana Luiza dos Santos Dias"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="#09427A"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="RA: 2571392312041"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

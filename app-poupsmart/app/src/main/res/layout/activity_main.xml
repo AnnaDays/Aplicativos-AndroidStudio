@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFD3EE"
+        android:backgroundTint="#BFD3EE"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="203dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0D4EF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#022D66"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center_vertical|start"
+                android:paddingStart="16dp"
+                android:text="Poupança"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="153dp"
+                android:layout_height="101dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/turquoise_and_black_animals_illustrative_pets_store_logo__1_" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Inteligente como você."
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/editTextText4"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edt"
+                android:backgroundTint="#AAC3F4"
+                android:drawableStart="@drawable/icon_money"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Valor Inicial (em R$)"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:textColor="#2A2828"
+                android:textColorHighlight="#2A2828"
+                android:textColorHint="#2A2828"
+                android:textColorLink="#2A2828"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/editTextText5"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edt"
+                android:backgroundTint="#AAC3F4"
+                android:drawableStart="@drawable/icon_money"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Aplicação Mensal (ex: 100.00)"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:textColor="#2A2828"
+                android:textColorHighlight="#2A2828"
+                android:textColorHint="#2A2828"
+                android:textColorLink="#2A2828"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/editTextText6"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edt"
+                android:backgroundTint="#AAC3F4"
+                android:drawableStart="@drawable/icon_money"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Tempo de Aplicação (meses)"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:textColor="#2A2828"
+                android:textColorHighlight="#2A2828"
+                android:textColorHint="#2A2828"
+                android:textColorLink="#2A2828"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/editTextText7"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_edt"
+                android:backgroundTint="#AAC3F4"
+                android:drawableStart="@drawable/icon_money"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Taxa (ex: 0.02)"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:textColor="#2A2828"
+                android:textColorHighlight="#2A2828"
+                android:textColorHint="#2A2828"
+                android:textColorLink="#2A2828"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#022D66"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Calcular"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFFFF"
+                android:textSize="16dp"
+                app:cornerRadius="10dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text=" ©By Ana Luiza Dias"
+                android:textColor="#2A2828"
+                android:textColorLink="#2A2828"
+                android:textSize="8sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F6B7"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F7B8"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <!-- Conteúdo do LinearLayout -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="#7F8827" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="371dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Consumo Total R$:"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtConsumo"
+                android:layout_width="188dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#7F8727"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="386dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Couvert Artístico R$:"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/edtCouvert"
+                android:layout_width="189dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF7F8727"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:inputType="text"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="366dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Dividir conta por:"
+                android:textColor="#FF000000" />
+
+            <EditText
+                android:id="@+id/edtDivisao"
+                android:layout_width="195dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF7F8727"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:inputType="text"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/btnContaFinal"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#7F8727"
+                android:fontFamily="@font/montserrat_bold"
+                android:onClick="calcularContaFinal"
+                android:text="Calcular Conta Final"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="©By Ana Luiza Dias"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="391dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Taxa de Serviço (10%):"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edtTaxa"
+                android:layout_width="193dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF7F8727"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:inputType="text"
+                android:textColor="#CC1A1A"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="19dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Conta Total R$:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edtContaTotal"
+                android:layout_width="185dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF7F8727"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:inputType="text"
+                android:textColor="#CC1A1A"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Valor por Pessoa R$"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edtValorPessoa"
+                android:layout_width="192dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF7F8727"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:inputType="text"
+                android:textColor="#CC1A1A"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="21dp" />
+
+            <Button
+                android:id="@+id/btnPagarConta"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#7F8627"
+                android:fontFamily="@font/montserrat_bold"
+                android:onClick="pagar"
+                android:text="Pagar Conta"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="26dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:srcCompat="@drawable/aninhacozinha" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

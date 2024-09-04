@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDB502"
+    android:backgroundTint="#FDB502"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="884dp"
+            android:background="#FEB602"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="#D24100"
+                android:backgroundTint="#D24100" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                app:srcCompat="@drawable/banner___pizza" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="#D24100" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="396dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Escolha seu sabor e quantidade"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Pizza Salgada"
+                android:textColor="#D24100"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="393dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="248dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="196dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="200dp"
+                            android:layout_height="138dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/pizza_mussarela" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="214dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:gravity="center"
+                            android:text="Pizza de Muçarela"
+                            android:textColor="#FFFCFC"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="214dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="R$30.00"
+                            android:textColor="#D24100"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edtPizzaQueijo"
+                            android:layout_width="140dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#D24100"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="text"
+                            android:shadowColor="#2E2C2C"
+                            android:textColor="#2E2C2C"
+                            android:textColorHighlight="#2E2C2C"
+                            android:textColorHint="#2E2C2C"
+                            android:textColorLink="#2E2C2C"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="224dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="139dp"
+                            android:layout_height="135dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/pizza_frango" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:gravity="center"
+                            android:text="Pizza de Frango"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="R$30.00"
+                            android:textColor="#D24100"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edtPizzaFrango"
+                            android:layout_width="140dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#D24100"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="text"
+                            android:shadowColor="#2E2C2C"
+                            android:textColor="#2E2C2C"
+                            android:textColorHighlight="#2E2C2C"
+                            android:textColorHint="#2E2C2C"
+                            android:textColorLink="#2E2C2C"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="383dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Pizza Doce"
+                    android:textColor="#D24100"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="403dp"
+                    android:layout_height="235dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="188dp"
+                            android:layout_height="136dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/pizza_chocolate" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:gravity="center"
+                            android:text="Pizza de Chocolate"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="R$35.00"
+                            android:textColor="#D24100"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edtPizzaChocolate"
+                            android:layout_width="140dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#D24100"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="text"
+                            android:shadowColor="#2E2C2C"
+                            android:textColor="#2E2C2C"
+                            android:textColorHighlight="#2E2C2C"
+                            android:textColorHint="#2E2C2C"
+                            android:textColorLink="#2E2C2C"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="183dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="129dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/pizza_romeu" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:gravity="center"
+                            android:text="Pizza Romeu e Julieta"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="172dp"
+                            android:layout_height="18dp"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="R$35.00"
+                            android:textColor="#D24100"
+                            android:textSize="13sp" />
+
+                        <EditText
+                            android:id="@+id/edtPizzaRomeu"
+                            android:layout_width="150dp"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="#D24100"
+                            android:ems="10"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="text"
+                            android:shadowColor="#2E2C2C"
+                            android:textColor="#2E2C2C"
+                            android:textColorHighlight="#2E2C2C"
+                            android:textColorHint="#2E2C2C"
+                            android:textColorLink="#2E2C2C"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+
+            <Button
+                android:id="@+id/btnFazerPedido"
+                android:layout_width="231dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#D24100"
+                android:fontFamily="@font/montserrat_bold"
+                android:onClick="fazerPedido"
+                android:text="Fazer Pedido"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:text="©By Ana Luiza Dias"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="29dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="Total da Compra"
+                android:textColor="#D14100"
+                android:textSize="15sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/edtResultado"
+                android:layout_width="220dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#D24100"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:shadowColor="#1B1A1A"
+                android:textColor="#139B20"
+                android:textColorHighlight="#2E2C2C"
+                android:textColorHint="#474444"
+                android:textColorLink="#2E2C2C"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="27dp" />
+
+            <Button
+                android:id="@+id/btnPagarPedido"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#D14100"
+                android:fontFamily="@font/montserrat_bold"
+                android:onClick="pagarPedido"
+                android:text="Pagar Pedido"
+                android:textColor="#FFFFFF"
+                app:cornerRadius="8dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="382dp"
+                android:layout_height="330dp"
+                app:srcCompat="@drawable/orange_and_blue_illustrative_circle_food_logo" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

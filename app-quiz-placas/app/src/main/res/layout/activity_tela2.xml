@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="460dp"
+        android:layout_height="729dp"
+        android:background="#00E8E4"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="163dp"
+                android:layout_height="55dp"
+                android:background="#048D8B"
+                android:backgroundTint="#048D8B"
+                app:srcCompat="@drawable/ana_quiz_placas" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#048E8C" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="427dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:id="@+id/txtPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="Q1 - Qual é o significado desta placa?"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+
+        <ImageView
+            android:id="@+id/imgvPlaca"
+            android:layout_width="220dp"
+            android:layout_height="154dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/placalombada" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+
+        <Button
+            android:id="@+id/btnPlaca1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#048D8B"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="Escolha1"
+            android:text="Lombada"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <Button
+            android:id="@+id/btnPlaca2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#048D8B"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="Escolha2"
+            android:text="Atropelamento"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <Button
+            android:id="@+id/btnPlaca3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#048D8B"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="Escolha3"
+            android:text="Animais na pista"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <Button
+            android:id="@+id/btnPlaca4"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#048D8B"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="Escolha4"
+            android:text="Ponte à frente"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:cornerRadius="12dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="111dp" />
+
+        <Button
+            android:id="@+id/btnSair2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#048C8A"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="Sair"
+            android:text="Sair"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
